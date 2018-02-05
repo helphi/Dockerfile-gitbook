@@ -1,8 +1,8 @@
-FROM node:9.4.0
+FROM ubuntu:xenial-20180123
+
+RUN sudo apt install -y nodejs calibre &&\
+    apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
 
 RUN npm install gitbook-cli -g &&\
     gitbook fetch 3.2.3 &&\
-    rm -rf /tmp/*
-
-RUN wget -nv -O- https://download.calibre-ebook.com/linux-installer.py |\
-    python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+    rm -rf /tmp/* /var/tmp/*
