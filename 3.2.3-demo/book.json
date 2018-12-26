@@ -34,7 +34,7 @@
         }
     },
     "pdf": {
-        "fontSize": 18,
+        "fontSize": 14,
         "fontFamily": "Noto Serif CJK SC"
     }
 }
