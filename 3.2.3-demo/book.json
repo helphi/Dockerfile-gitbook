@@ -1,0 +1,40 @@
+{
+    "language": "zh-hans",
+    "title": "demo",
+    "structure": {
+        "readme": "INTRODUCTION.md"
+    },
+    "plugins": [
+        "-sharing",
+        "-lunr", 
+        "-search", 
+        "search-pro@2.0.2",
+        "splitter@0.0.8",
+        "editlink@1.0.2",
+        "expandable-chapters-small@0.1.7",
+        "page-footer-ex@0.1.2",
+        "mermaid-gb3@2.1.0",
+        "puml@1.0.1",
+        "chart@0.2.1"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "editlink": {
+            "base": "https://github.com/helphi/Dockerfile-gitbook/edit/master/3.2.3-demo",
+            "label": "编辑本页",
+            "multilingual": false
+        },
+        "page-footer-ex": {
+            "copyright": "&copy 版权所有",
+            "markdown": false,
+            "update_label": "<b>更新时间：</b>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    },
+    "pdf": {
+        "fontSize": 18,
+        "fontFamily": "Noto Serif CJK SC"
+    }
+}
