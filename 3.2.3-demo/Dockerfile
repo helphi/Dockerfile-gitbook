@@ -7,7 +7,7 @@ RUN apt update &&\
     apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
 
 WORKDIR /demo
-ADD * ./
+ADD . ./
 RUN gitbook install && rm -rf /tmp/*
 
 EXPOSE 4000
