@@ -1,11 +1,7 @@
-FROM ubuntu:bionic-20181112
+FROM ubuntu:bionic
 
 ENV LANG=C.UTF-8 TZ=CST-8
 
 RUN apt update &&\
-    DEBIAN_FRONTEND=noninteractive apt install -y curl calibre fontconfig fonts-noto-cjk --no-install-recommends &&\
-    apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
-    
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - &&\
-    apt install -y nodejs &&\
+    DEBIAN_FRONTEND=noninteractive apt install -y nodejs calibre fontconfig fonts-noto-cjk --no-install-recommends &&\
     apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
