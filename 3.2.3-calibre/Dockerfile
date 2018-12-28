@@ -6,7 +6,7 @@ RUN apt update &&\
     DEBIAN_FRONTEND=noninteractive apt install -y calibre --no-install-recommends  &&\
     apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
 
-RUN DEBIAN_FRONTEND=noninteractive apt install -y fonts-noto-cjk --no-install-recommends &&\
+RUN DEBIAN_FRONTEND=noninteractive apt install -y fontconfig fonts-noto-cjk --no-install-recommends &&\
     apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
 
 RUN DEBIAN_FRONTEND=noninteractive apt install -y ca-certificates nodejs npm &&\
