@@ -20,6 +20,4 @@
 - [侧边栏收缩](part3/splitter.md)
 - [目录折叠](part3/expand.md)
 - [页脚](part3/foot.md)
-- [mermaid](part3/mermaid.md)
-- [UML](part3/uml.md)
-- [图表](part3/chart.md)
+- [图表](part3/diagram.md)
