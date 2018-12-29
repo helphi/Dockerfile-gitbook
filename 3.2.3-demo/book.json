@@ -4,6 +4,11 @@
     "structure": {
         "readme": "INTRODUCTION.md"
     },
+    "links" : {
+        "sidebar" : {
+            "PDF版下载" : "/book.pdf"
+        }
+    },
     "plugins": [
         "-sharing",
         "-lunr", 
