@@ -69,6 +69,30 @@ c2(yes)->io->e
 c2(no)->op2->e
 ```
 
+## mermaid
+
+<http://npm.taobao.org/package/gitbook-plugin-mermaid-cli>
+
+代码：
+
+    ```mermaid
+    graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+    ```
+
+效果：
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
+
 ## echarts
 
 <https://plugins.gitbook.com/plugin/echarts>

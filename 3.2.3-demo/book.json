@@ -21,7 +21,8 @@
         "sequence@0.1.1",
         "flow@1.1.7",
         "nomnoml@1.0.0",
-        "echarts@0.0.17"
+        "echarts@0.0.17",
+        "mermaid-cli@1.0.14"
     ],
     "pluginsConfig": {
         "theme-default": {
