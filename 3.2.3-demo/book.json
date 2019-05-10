@@ -38,6 +38,9 @@
             "markdown": false,
             "update_label": "<b>更新时间：</b>",
             "update_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "mermaid-cli": {
+           "chromeArgs": ["--no-sandbox"]
         }
     },
     "pdf": {
